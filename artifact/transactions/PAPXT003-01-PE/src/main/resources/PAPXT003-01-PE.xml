@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="PAPXT003" application="PAPX" version="01" country="PE" language="ES">
+	<paramsIn>
+		<dto order="1" name="user" mandatory="0" package="com.bbva.papx.dto.user.UserDTO" artifactId="PAPXC003">
+			<parameter order="1" name="userId" mandatory="1" type="String" size="30"/>
+			<parameter order="2" name="name" mandatory="0" type="String" size="40"/>
+			<parameter order="3" name="email" mandatory="0" type="String" size="40"/>
+		</dto>
+	</paramsIn>
+	<paramsOut/>
+	<description>transcacion para usuario</description>
+</transaction>
