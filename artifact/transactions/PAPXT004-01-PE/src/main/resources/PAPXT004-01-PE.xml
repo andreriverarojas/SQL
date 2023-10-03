@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="PAPXT004" application="PAPX" version="01" country="PE" language="ES">
+	<paramsIn>
+		<parameter order="1" name="name" mandatory="1" type="String" size="40"/>
+	</paramsIn>
+	<paramsOut/>
+	<description>transcacciones para usuario</description>
+</transaction>
