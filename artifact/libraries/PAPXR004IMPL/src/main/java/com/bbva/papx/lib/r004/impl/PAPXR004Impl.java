@@ -30,6 +30,4 @@ public class PAPXR004Impl extends PAPXR004Abstract {
 		}
 		return String.valueOf(result);
 	}
-
-
 }
