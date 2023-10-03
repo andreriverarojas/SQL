@@ -25,11 +25,11 @@ public class PAPXR003Impl extends PAPXR003Abstract {
 	public String executeSaveUser(UserDTO userDTO) {
 		LOGGER.info("[APX-R1] datos del parametro de entrada : {}", userDTO);
 		int resultSQL = 0;
-		if(userDTO.getUserId() != null){
+		if(userDTO.getName() != null){
 			Map<String, Object> usuarioSQL = new HashMap<>();
-			usuarioSQL.put("usuario Id", userDTO.getUserId());
+			/*usuarioSQL.put("usuario Id", userDTO.getUserId());*/
 			usuarioSQL.put("name", userDTO.getName());
-			usuarioSQL.put("email", userDTO.getEmail());
+			/*usuarioSQL.put("email", userDTO.getEmail());*/
 			try{
 				LOGGER.info("[APX-R3] Acceso a jdbcUtils ");
 				resultSQL = this.jdbcUtils.update(insert, usuarioSQL);
