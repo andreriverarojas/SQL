@@ -3,6 +3,11 @@
 	<paramsIn>
 		<parameter order="1" name="name" mandatory="1" type="String" size="40"/>
 	</paramsIn>
-	<paramsOut/>
+	<paramsOut>
+		<list order="1" name="userOut" mandatory="1">
+			<parameter order="1" name="Type" mandatory="0" type="String" size="50"/>
+		</list>
+		<parameter order="2" name="userIn" mandatory="1" type="String" size="50"/>
+	</paramsOut>
 	<description>transcacciones para usuario</description>
 </transaction>

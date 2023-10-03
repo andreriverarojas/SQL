@@ -7,6 +7,8 @@ import com.bbva.papx.lib.r004.PAPXR004;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 /**
  * transcacciones para usuario
  *
@@ -25,7 +27,10 @@ public class PAPXT00401PETransaction extends AbstractPAPXT00401PETransaction {
 		UserDTO user = new UserDTO();
 		user.setName(this.getName());
 
-		String result = papxR004.executeInsertUser(user);
+		String userIn = papxR004.executeInsertUser(user);
+		List<String> userOut = papxR004.executeLeerUser();
+		this.setUserin(userIn);
+		this.setUserout(userOut);
 		this.setSeverity(Severity.OK);
 		this.setHttpResponseCode(HttpResponseCode.HTTP_CODE_200);
 	}
