@@ -13,4 +13,6 @@ public interface PAPXR004 {
 
 	List<String> executeLeerUser();
 
+	void execute();
+
 }

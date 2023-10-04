@@ -20,16 +20,9 @@ public abstract class AbstractPAPXT00401PETransaction extends AbstractTransactio
 	}
 
 	/**
-	 * Set value for List<String> output parameter userOut
+	 * Set value for List<String> output parameter usuarios
 	 */
-	protected void setUserout(final List<String> field){
-		this.addParameter("userOut", field);
-	}
-
-	/**
-	 * Set value for String output parameter userIn
-	 */
-	protected void setUserin(final String field){
-		this.addParameter("userIn", field);
+	protected void setUsuarios(final List<String> field){
+		this.addParameter("usuarios", field);
 	}
 }

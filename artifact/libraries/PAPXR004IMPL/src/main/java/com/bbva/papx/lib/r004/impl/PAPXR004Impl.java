@@ -15,6 +15,7 @@ public class PAPXR004Impl extends PAPXR004Abstract {
 
 	@Override
 	public String executeInsertUser(UserDTO userDTO) {
+		LOGGER.info("[APX-R1] Ingreso de parametro : {}", userDTO);
 		int result = 0;
 		if(userDTO != null){
 			Map<String, Object> cliente = new HashMap<>();
@@ -44,10 +45,15 @@ public class PAPXR004Impl extends PAPXR004Abstract {
 		}
 		List<String> nombres = new ArrayList<>();
 		for (Map<String,Object> name :clientes ){
-			nombres.add((String)name.get("NOMBRE"));
+			nombres.add((String) name.get("NAME"));
 		}
 
 		return nombres;
+	}
+
+	@Override
+	public void execute() {
+
 	}
 
 }

@@ -27,10 +27,10 @@ public class PAPXT00401PETransaction extends AbstractPAPXT00401PETransaction {
 		UserDTO user = new UserDTO();
 		user.setName(this.getName());
 
-		String userIn = papxR004.executeInsertUser(user);
+		papxR004.executeInsertUser(user);
 		List<String> userOut = papxR004.executeLeerUser();
-		this.setUserin(userIn);
-		this.setUserout(userOut);
+		this.setUsuarios(userOut);
+
 		this.setSeverity(Severity.OK);
 		this.setHttpResponseCode(HttpResponseCode.HTTP_CODE_200);
 	}
