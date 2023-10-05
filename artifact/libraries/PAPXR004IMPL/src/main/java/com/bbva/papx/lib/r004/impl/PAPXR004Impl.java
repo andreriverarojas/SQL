@@ -48,8 +48,9 @@ public class PAPXR004Impl extends PAPXR004Abstract {
 		List<String> nombres = new ArrayList<>();
 		for (Map<String,Object> name :clientes ){
 			nombres.add((String) name.get("NAME"));
+			nombres.add((String) name.get("LASTNAME"));
+			nombres.add((String) name.get("EMAIL"));
 		}
-
 		return nombres;
 	}
 
