@@ -25,7 +25,7 @@ public class PAPXT00401PETransaction extends AbstractPAPXT00401PETransaction {
 		PAPXR004 papxR004 = this.getServiceLibrary(PAPXR004.class);
 
 		UserDTO user = new UserDTO();
-		user.setName(this.getName());
+		user = this.getUser();
 
 		papxR004.executeInsertUser(user);
 		List<String> userOut = papxR004.executeLeerUser();

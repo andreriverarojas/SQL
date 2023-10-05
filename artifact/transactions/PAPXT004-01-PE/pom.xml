@@ -49,6 +49,11 @@
 			<artifactId>PAPXR004</artifactId>
 			<version>0.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.bbva.papx.dto.user</groupId>
+			<artifactId>PAPXC004</artifactId>
+			<version>[0.0, )</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>

@@ -20,6 +20,8 @@ public class PAPXR004Impl extends PAPXR004Abstract {
 		if(userDTO != null){
 			Map<String, Object> cliente = new HashMap<>();
 			cliente.put("NAME", userDTO.getName());
+			cliente.put("LASTNAME", userDTO.getLastName());
+			cliente.put("EMAIL", userDTO.getEmail());
 			try{
 				result = this.jdbcUtils.update(INSERT, cliente);
 			}catch (NoResultException ne){
@@ -34,7 +36,7 @@ public class PAPXR004Impl extends PAPXR004Abstract {
 	@Override
 	public List<String> executeLeerUser() {
 		LOGGER.info("Consultando clientes ");
-		Map<String, Object> parameter = new HashMap<>();
+		//Map<String, Object> parameter = new HashMap<>();
 		List<Map<String, Object>> clientes = null;
 		try {
 			clientes = this.jdbcUtils.queryForList(SELECT);

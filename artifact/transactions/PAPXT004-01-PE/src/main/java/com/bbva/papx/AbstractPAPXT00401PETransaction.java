@@ -1,6 +1,7 @@
 package com.bbva.papx;
 
 import com.bbva.elara.transaction.AbstractTransaction;
+import com.bbva.papx.dto.user.UserDTO;
 import java.util.List;
 
 /**
@@ -13,10 +14,10 @@ public abstract class AbstractPAPXT00401PETransaction extends AbstractTransactio
 
 
 	/**
-	 * Return value for input parameter name
+	 * Return value for input parameter user
 	 */
-	protected String getName(){
-		return (String)this.getParameter("name");
+	protected UserDTO getUser(){
+		return (UserDTO)this.getParameter("user");
 	}
 
 	/**

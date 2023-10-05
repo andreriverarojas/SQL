@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <transaction xmlns="http://www.w3schools.com" transactionName="PAPXT004" application="PAPX" version="01" country="PE" language="ES">
 	<paramsIn>
-		<parameter order="1" name="name" mandatory="1" type="String" size="40"/>
+		<dto order="1" name="user" mandatory="1" package="com.bbva.papx.dto.user.UserDTO" artifactId="PAPXC004">
+			<parameter order="1" name="name" mandatory="1" type="String" size="50"/>
+			<parameter order="2" name="lastName" mandatory="1" type="String" size="50"/>
+			<parameter order="3" name="email" mandatory="1" type="String" size="50"/>
+		</dto>
 	</paramsIn>
 	<paramsOut>
 		<list order="1" name="usuarios" mandatory="1">
